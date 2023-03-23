@@ -1,7 +1,7 @@
 # ---------------------------------
 # Name: homework6
-# Purpose: Base file with functions so we can demonstrate unittest
-# library in testhw6
+# Purpose: Base file with functions, so we can demonstrate unittest
+#          library in testhw6
 #
 # Author: Nick Tang, Yuto Yoshimori
 # ---------------------------------
@@ -15,7 +15,8 @@ def final_grade(student_grades, ec_points=1):
     :param student_grades: (dict) student names mapped to their grades
     :param ec_points: (int) number of extra credit points to add
                         if no ec_points
-    :return: (dict)
+    :return: (dict) dictionary where students' grades have extra credit
+            added
     """
     return {student: student_grades[student] + 1 for student in
             student_grades}
